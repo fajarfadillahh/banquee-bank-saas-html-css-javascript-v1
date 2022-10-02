@@ -22,3 +22,27 @@ function stickyHeader() {
     : header.classList.remove("sticky-action");
 }
 window.addEventListener("scroll", stickyHeader);
+
+// ===== DARK MODE =====
+// change the icons inside the button based on previous settings
+if (localStorage.getItem("theme") === "dark") {
+  setDarkMode();
+}
+
+// theme toggle button
+function setDarkMode() {
+  let emoticon = "";
+  let isDark = document.body.classList.toggle("dark");
+
+  // if set via local storage previously
+  if (isDark) {
+    emoticon = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    emoticon = "🌙";
+    localStorage.removeItem("theme");
+  }
+
+  // put the theme icon on button
+  document.getElementById("theme-toggle").innerHTML = emoticon;
+}

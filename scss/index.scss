@@ -52,6 +52,16 @@ body {
   font-family: var(--font-body);
   font-weight: var(--font-reguler);
   background-color: var(--container-color);
+
+  // dark mode color
+  &.dark {
+    --container-color: #1a191e;
+    --title-color: #ffffff;
+
+    .header__menu {
+      background-color: #2a2830;
+    }
+  }
 }
 
 ul,
@@ -87,7 +97,7 @@ img {
   }
 
   &-text {
-    color: var(--text-color);
+    color: var(--title-color);
     line-height: 180%;
   }
 
@@ -102,7 +112,7 @@ img {
   background-color: var(--green-color);
   border-radius: 8px;
   font-weight: var(--font-medium);
-  color: var(--container-color);
+  color: #fff;
 }
 
 .container {
@@ -225,7 +235,7 @@ img {
     align-items: center;
     gap: 6px;
     font-size: 15px;
-    color: var(--grey-color);
+    color: var(--title-color);
 
     &-icon {
       display: inline-block;
