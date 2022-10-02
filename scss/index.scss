@@ -353,3 +353,9 @@ img {
     }
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  background-color: var(--green-color);
+  color: var(--container-color);
+}
