@@ -7,9 +7,9 @@
   --header-height: 6rem;
 
   // color palette
-  --black-color: #1a191e;
-  --grey-color: #7e7d81;
-  --white-color: #ffffff;
+  --container-color: #ffffff;
+  --title-color: #1a191e;
+  --text-color: #7e7d81;
   --green-color: #5bb5a2;
 
   // font body
@@ -51,7 +51,7 @@ html {
 body {
   font-family: var(--font-body);
   font-weight: var(--font-reguler);
-  background-color: var(--white-color);
+  background-color: var(--container-color);
 }
 
 ul,
@@ -82,12 +82,12 @@ img {
   &-title {
     font-size: 36px;
     font-weight: var(--font-bold);
-    color: var(--black-color);
+    color: var(--title-color);
     margin-bottom: var(--margin-1);
   }
 
   &-text {
-    color: var(--grey-color);
+    color: var(--text-color);
     line-height: 180%;
   }
 
@@ -102,7 +102,7 @@ img {
   background-color: var(--green-color);
   border-radius: 8px;
   font-weight: var(--font-medium);
-  color: var(--white-color);
+  color: var(--container-color);
 }
 
 .container {
@@ -121,7 +121,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--white-color);
+  background-color: var(--container-color);
   z-index: var(--z-fixed);
   transition: 0.3s;
 
@@ -176,7 +176,7 @@ img {
 
   &__link {
     font-weight: var(--font-medium);
-    color: var(--black-color);
+    color: var(--title-color);
   }
 
   &__button {
@@ -186,7 +186,7 @@ img {
 
   &__toggle {
     font-size: 1.5rem;
-    color: var(--black-color);
+    color: var(--title-color);
     cursor: pointer;
   }
 
