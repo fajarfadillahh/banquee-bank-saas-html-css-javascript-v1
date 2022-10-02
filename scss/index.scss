@@ -359,3 +359,18 @@ img {
   background-color: var(--green-color);
   color: var(--container-color);
 }
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  &-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5rem;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
