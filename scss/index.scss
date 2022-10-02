@@ -52,6 +52,7 @@ body {
   font-family: var(--font-body);
   font-weight: var(--font-reguler);
   background-color: var(--container-color);
+  transition: 0.3s;
 
   // dark mode color
   &.dark {
@@ -94,11 +95,13 @@ img {
     font-weight: var(--font-bold);
     color: var(--title-color);
     margin-bottom: var(--margin-1);
+    transition: 0.3s;
   }
 
   &-text {
     color: var(--title-color);
     line-height: 180%;
+    transition: 0.3s;
   }
 
   &-bottom {
@@ -187,6 +190,7 @@ img {
   &__link {
     font-weight: var(--font-medium);
     color: var(--title-color);
+    transition: 0.3s;
   }
 
   &__button {
@@ -198,6 +202,7 @@ img {
     font-size: 1.5rem;
     color: var(--title-color);
     cursor: pointer;
+    transition: 0.3s;
   }
 
   &__theme {
@@ -236,6 +241,7 @@ img {
     gap: 6px;
     font-size: 15px;
     color: var(--title-color);
+    transition: 0.3s;
 
     &-icon {
       display: inline-block;
