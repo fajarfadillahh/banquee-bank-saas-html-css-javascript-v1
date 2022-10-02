@@ -253,3 +253,26 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUEIRES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home {
+    &__text {
+      width: 400px;
+      margin: 0 auto var(--margin-2);
+    }
+
+    &__item {
+      font-size: 16px;
+
+      &-icon {
+        font-size: 1rem;
+      }
+    }
+
+    &__img {
+      width: 400px;
+    }
+  }
+}
